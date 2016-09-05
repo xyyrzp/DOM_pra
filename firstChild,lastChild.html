@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<script>
+		window.onload=function(){
+			var oUl = document.getElementById("ul1");
+			//alert(oUl.firstChild);
+			/*if(oUl.firstElementChild){//W3C
+				oUl.firstElementChild.style.background="red";
+			}else{//IE
+				oUl.firstChild.style.background="red";
+			}
+*/
+			//可以封装函数
+			var oFirst = oUl.firstElementChild||oUl.firstChild;
+			oFirst.style.background="red";
+		};
+	</script>
+</head>
+<body>
+	<ul id="ul1" style="border:1px solid #eee;">
+		<li>1111<span>span</span></li>
+		<li>2222</li>
+		<li>3333</li>
+		<li>4444</li>
+		<p>ppppp</p>
+	</ul>
+</body>
+</html>

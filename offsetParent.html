@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<style>
+		div{padding:40px 50px;}
+		#div1{background:red;}
+		#div2{background:green;}
+		#div3{background:orange;position:relative;}
+	</style>
+	<script>
+		window.onload=function(){
+			var oDiv3 = document.getElementById("div3");
+			alert(oDiv3.parentNode.id);
+			alert(oDiv3.offsetParent.id);
+			var oDiv = document.getElement
+
+		};
+	</script>
+</head>
+<body>
+	<div id="div1">
+		<div id="div2">
+			<div id="div3"></div>
+		</div>
+	</div>
+</body>
+</html>

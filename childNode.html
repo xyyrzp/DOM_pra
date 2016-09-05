@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<script>
+		window.onload=function(){
+			var oUl = document.getElementById("ul1");
+			//alert(oUl.childNodes.length);
+			/*for(var i=0;i<oUl.childNodes.length;i++){
+				oUl.childNodes[i].style.background="red";
+			}*/
+			//alert(oUl.nodeType);
+			/*alert(oUl.childNodes[0].nodeType);
+			alert(oUl.attributes.length);
+			alert(oUl.attributes[0].name);//属性;
+			alert(oUl.attributes[0].value);//属性值*/
+			//alert(oUl.attributes[0].nodeType);
+
+			if(var i=0;i<oUl.childNodes.length;i++){
+				alert(1);
+				if(oUl.childNodes[i].nodeType==1){
+					oUl.childNodes[i].style.background="red";
+				}
+			}
+		};
+	</script>
+</head>
+<body>
+	<ul id="ul1" style="border:1px solid #eee;">
+		<li>1111</li>
+		<li>2222</li>
+		<li>3333</li>
+		<li>4444</li>
+	</ul>
+</body>
+</html>

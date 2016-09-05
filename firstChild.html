@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<script>
+		window.onload=function(){
+			var oUl = document.getElementById("ul1");
+			
+			//可以封装函数
+			var oFirst = oUl.firstElementChild||oUl.firstChild;
+			oFirst.style.background="red";
+			/*if(oFirst){
+				oFirst.style.background="red";
+			}else{
+				alert('没有子节点可以设置')
+			}*/
+
+			/*if(oUl.children[0]){
+				oUl.children[0].style.background="red";
+			}else{
+				alert('没有子节点可以设置');
+			}
+*/
+/*oFirst*/
+			var oLast = oUl.lastElementChild||oUl.lastChild;
+			oLast.style.background="yellow";
+			var oNext = oFirst.nextElementSibling||oFirst.nextSibling;
+			oNext.style.background="blue";
+			var oPre = oLast.previousElementSibling||oLast.previousSibling;
+			oPre.style.background="pink";
+
+		};
+	</script>
+</head>
+<body>
+	<ul id="ul1" style="border:1px solid #eee;">
+		<li>1111<span>span</span></li>
+		<li>2222</li>
+		<li>3333</li>
+		<li>4444</li>
+		<p>ppppp</p>
+	</ul>
+</body>
+</html>
